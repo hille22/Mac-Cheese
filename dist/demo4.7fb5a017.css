@@ -1,0 +1,47 @@
+.img-wrap {
+	position: relative;
+	pointer-events: none;
+	width: 350px;
+	height: 450px;
+	max-width: 100%;	
+	cursor: grab;
+	margin: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-drag,
+.img-trail {
+	cursor: grab;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	pointer-events: auto;
+}
+.img-wrap:nth-child(1) {
+	margin-top: 20vh;
+}
+
+.img-wrap:nth-child(2) {
+	margin-top: 0;
+	width: 210px;
+	height: 290px;
+}
+
+.img-trail {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+}
+
+.content__title {
+	font-size: 8vw;
+	mix-blend-mode: exclusion;
+}
+
+
+/*# sourceMappingURL=/demo4.7fb5a017.css.map */

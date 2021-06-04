@@ -1,0 +1,241 @@
+.container0 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 12px;
+    grid-template-areas: "col-1 col-2 col-3 col-3 col-3  col-6 col-7 col-8";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 1024px) {
+    .container0 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "col-3 ";
+    }
+    .col-1,
+    .col-2,
+    .col-7,
+    .col-8 {
+        display: none;
+    }
+}
+
+.container1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 12px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "fire0 . col-2 col-2 col-2 mac1 . ."
+        ". . col-3 col-3 col-3 col-3 . ."
+        ". col-4 col-4 col-4 col-5  col-5 col-5 ."
+        "mac3 col-1 col-1 col-1 col-1 fire3 . ."
+        ". mac4 col-6 col-6 col-6 col-6 col-7 col-7"
+        ". fire4 . . mac0 . col-7 col-7 ";
+}
+.container4 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 12px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "fire0 . col-2 col-2 col-2 mac1 . ."
+        ". . col-3 col-3 col-3 col-3 . ."
+        ". col-4 col-4 col-4 col-5  col-5 col-5 ."
+        "mac3 col-1 col-1 col-1 col-1 fire3 . ."
+        ". mac4 col-6 col-6 col-6 col-6 col-7 col-7"
+        ". fire4 . . mac0 . col-7 col-7 ";
+}
+@media only screen and (max-width: 1024px) {
+    .container4 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "col-3 "
+            "col-4 "
+            "col-5 ";
+           
+    }
+    .col-1,
+    .col-2,
+    .col-7,
+    .col-8,
+    .col5 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container1 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "col-3 col-3"
+            "col-4 col-4"
+            "col-5 col-6";
+    }
+    .col-1,
+    .col-2,
+    .col-7,
+    .col-8,
+    .col5 {
+        display: none;
+    }
+}
+
+.container2 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 12px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "col-3 col-3 col-3 col-3 col-3 col-3 col-3 col-3"
+    "col-4 col-4 col-4 col-4 col-4 col-4 col-4 col-4";
+}
+
+.container3 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 12px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "suck-3 suck-3 suck-3 suck-3 suck-2 suck-2 . ."
+        "suck-1 suck-1 suck-1 suck-1 . . . ."
+		". . . .  suck-4 suck-4 . ."
+        ". . suck-5 suck-5 suck-5 suck-5 suck-5 suck-5";
+}
+
+.suck-1 {
+    grid-area: suck-1;
+
+}
+.suck-1 img.rellax{
+	width: 150%;
+	
+}
+
+.suck-2 {
+    transition: transform 3s ease;
+    transform: translateX(0px);
+    grid-area: suck-2;
+}
+.suck-2:hover {
+    transform: translateX(1050px);
+}
+.suck-3 {
+    grid-area: suck-3;
+
+    transition: transform 3s ease;
+    transform: translateX(0px);
+}
+.suck-3:hover {
+    transform: translateX(-1050px);
+}
+.suck-4 {
+    grid-area: suck-4;
+
+    transition: transform 3s ease;
+    transform: translateX(0px);
+}
+.suck-4:hover {
+    transform: translateX(1050px);
+}
+.suck-5 {
+    grid-area: suck-5;
+    
+}
+.suck-5 img.rellax{
+	width: 100vh;
+	
+}
+
+.col-1 {
+    grid-area: col-1;
+}
+
+.fire0 {
+    grid-area: fire0;
+    transform: rotate(-15deg);
+}
+.fire1 {
+    grid-area: fire1;
+    transform: rotate(-25deg);
+}
+.fire2 {
+    grid-area: fire2;
+    transform: rotate(8deg);
+}
+.fire3 {
+    grid-area: fire3;
+    transform: rotate(-5deg);
+}
+.fire4 {
+    grid-area: fire4;
+    transform: rotate(5deg);
+}
+
+.mac0 {
+    grid-area: mac0;
+    transform: rotate(55deg);
+}
+.mac1 {
+    grid-area: mac1;
+    transform: rotate(25deg);
+}
+.mac2 {
+    grid-area: mac2;
+    transform: rotate(128deg);
+}
+.mac3 {
+    grid-area: mac3;
+    transform: rotate(-5deg);
+}
+.mac4 {
+    grid-area: mac4;
+    transform: rotate(25deg);
+}
+
+.col-2 {
+    grid-area: col-2;
+  
+}
+.col-3 {
+    grid-area: col-3;
+    font-size: 60px;
+}
+.col-4 {
+    grid-area: col-4;
+}
+.col-5 {
+    grid-area: col-5;
+}
+.col-6 {
+    grid-area: col-6;
+}
+.col-7 {
+    grid-area: col-7;
+}
+.col-8 {
+    grid-area: col-8;
+}
